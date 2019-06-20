@@ -22,6 +22,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.mycompany.mueblesuptc.servicios.CorsFilter.class);
+        resources.add(com.mycompany.mueblesuptc.servicios.PrinServices.class);
         resources.add(com.mycompany.mueblesuptc.servicios.ServicioCompra.class);
         resources.add(com.mycompany.mueblesuptc.servicios.ServicioProducto.class);
     }

@@ -5,13 +5,14 @@ import javax.persistence.Id;
 
 @Entity
 public class Cliente {
+
     @Id
     private int id_cliente;
     private String documento;
     private String nombre;
     private String apellido;
     private Tarjeta tarjeta;
-   
+
     public int getId_cliente() {
         return id_cliente;
     }
@@ -42,5 +43,13 @@ public class Cliente {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public Tarjeta getTarjeta() {
+        return tarjeta;
+    }
+
+    public void setTarjeta(Tarjeta tarjeta) {
+        this.tarjeta = tarjeta;
     }
 }

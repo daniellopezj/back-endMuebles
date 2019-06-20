@@ -3,9 +3,16 @@
   <persistence-unit name="com.mycompany_mueblesUptc_war_1.0-SNAPSHOTPU" transaction-type="JTA">
     <jta-data-source>jdbc/Muebles</jta-data-source>
     <class>com.mycompany.mueblesuptc.persistencia.entities.Cliente</class>
+    <class>com.mycompany.mueblesuptc.persistencia.entities.Tarjeta</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="com.mycompany_mueblesUptc_war_1.0-SNAPSHOTPU2" transaction-type="JTA">
+    <jta-data-source>jdbc/muebles2</jta-data-source>
     <class>com.mycompany.mueblesuptc.persistencia.entities.Factura</class>
     <class>com.mycompany.mueblesuptc.persistencia.entities.Producto</class>
-    <class>com.mycompany.mueblesuptc.persistencia.entities.Tarjeta</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>

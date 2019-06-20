@@ -5,11 +5,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Tarjeta {
-    
+    static final double valormonto = 5000000;
     @Id                 
     private int id_tarjeta;
     private Double monto;
-
+   
     public int getId_tarjeta() {
         return id_tarjeta;
     }

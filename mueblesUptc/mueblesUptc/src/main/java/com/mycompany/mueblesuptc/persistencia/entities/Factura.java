@@ -52,5 +52,4 @@ public class Factura {
     public void setValor_total(double valor_total) {
         this.valor_total = valor_total;
     }
-    
 }
